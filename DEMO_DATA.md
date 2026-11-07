@@ -457,3 +457,10 @@ Menu **Laporan** dan **Laporan Kustom** ada pada Bendahara, PPTK, Verifikator, P
 144. **Template.** Admin mengatur judul, tempat, teks "Sudah terima dari", dan logo (PNG/JPG, maks 2 MB, hanya selama sesi pada Tahap A). Perubahan langsung tampil di pratinjau.
 145. **Cetak.** Tombol Cetak hanya mencetak lembar kuitansi (bukan seluruh aplikasi), ukuran F4.
 146. **Catatan.** Keterangan "Plh./Plt." di bawah nama penandatangan (D01 §2.1) belum tampil karena data kuitansi belum menyimpan keterangan itu; dicatat untuk perbaikan berikutnya.
+
+## Lembar Hasil Verifikasi: tampilan baru (v10)
+
+147. **Tampilan.** Lembar Hasil Verifikasi (Cetak Hasil Verifikasi dan pratinjau Template Verifikasi) murni hitam putih tanpa blok isian warna, hanya garis, huruf tebal, dan miring, agar ringan dicetak dan jelas saat difotokopi. Susunan: kepala surat dengan logo dan garis ganda, judul, kotak "TERVERIFIKASI" dengan nomor verifikasi, kalimat pembuka, kotak rincian (TA/Seksi, Sub Kegiatan, Kode Rekening, Uraian, Uang Sebanyak, Terbilang), panel kiri (tanggal verifikasi, QR, nomor verifikasi, stempel, nama dan NIP Verifikator), panel kanan (Diterima Oleh: nama, bank, no. rekening; Jumlah yang diminta; potongan pajak per jenis; Jumlah Potongan; Jumlah yang Dibayarkan dengan garis ganda), jenis belanja, dan catatan keaslian.
+148. **Data.** Semua data sistem dari D01 §8 poin 2 tetap tampil. Token tidak dicetak sebagai teks; nomor verifikasi tercetak di samping QR (D01 §8 poin 3).
+149. **Teks bawaan.** Judul, kalimat pembuka, label, dan catatan penutup bawaan diubah mengikuti contoh Anda; Admin dapat mengubah semuanya di Template Verifikasi. Logo dan stempel dicetak hitam putih.
+150. **Belum diuji di peramban.** Periksa hasil cetak (Simpan sebagai PDF) pada ukuran F4/A4: muat satu halaman; tidak ada blok isian sehingga opsi Background graphics tidak diperlukan.
